@@ -5,9 +5,10 @@ increase = 0.03  # рост цен
 
 money_capital = 0  # количество денег, чтобы прожить 10 месяцев
 
-for i in range(months):
+for _ in range(months):
     delta = spend - salary
     money_capital += delta
     spend *= (increase + 1)
 
-print(round(money_capital))  # 18783
+print(round(money_capital))  
+# 18783
